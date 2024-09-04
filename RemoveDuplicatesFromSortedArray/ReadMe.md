@@ -1,6 +1,6 @@
-## 26. Remove Duplicates from Sorted Array
+# 26. Remove Duplicates from Sorted Array
 
-Given an integer array nums sorted in non-decreasing order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
+Given an integer **array** nums sorted in **non-decreasing** order, remove the duplicates in-place such that each unique element appears only once. The relative order of the elements should be kept the same. Then return the number of unique elements in nums.
 
 Consider the number of unique elements of nums to be k, to get accepted, you need to do the following things:
 
@@ -10,6 +10,7 @@ Custom Judge:
 
 The judge will test your solution with the following code:
 
+```
 int[] nums = [...]; // Input array
 int[] expectedNums = [...]; // The expected answer with correct length
 
@@ -19,11 +20,12 @@ assert k == expectedNums.length;
 for (int i = 0; i < k; i++) {
     assert nums[i] == expectedNums[i];
 }
+```
 If all assertions pass, then your solution will be accepted.
 
  
 
-Example 1:
+## Example 1:
 
 Input: nums = [1,1,2]
 Output: 2, nums = [1,2,_]
@@ -37,8 +39,8 @@ Explanation: Your function should return k = 5, with the first five elements of 
 It does not matter what you leave beyond the returned k (hence they are underscores).
  
 
-Constraints:
+## Constraints:
 
-1 <= nums.length <= 3 * 104
--100 <= nums[i] <= 100
-nums is sorted in non-decreasing order.
+- 1 <= nums.length <= 3 * 104
+- -100 <= nums[i] <= 100
+- nums is sorted in non-decreasing order.
